@@ -1,0 +1,11 @@
+<app-header-login></app-header-login>
+<div class="signup">
+    <!--this div only displays if the text variable is equal to 'Aluno' -->
+    <div class="box" *ngIf="text == 'Aluno'">
+        <app-signup-form-alunos></app-signup-form-alunos>
+    </div>
+    <!--this div only displays if the text variable is equal to 'Recrutador'-->
+     <div class="box" *ngIf="text == 'Recrutador'">
+        <app-signup-form-recrutadores></app-signup-form-recrutadores>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+.applicants{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.applicants > h2{
+    align-self: start;
+    margin-left: 10px;
+}
+.applicants > .no-applicants{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.no-applicants > img{
+    width: 30%;
+}
+.no-applicants> h2{
+    color: #939395;
+}

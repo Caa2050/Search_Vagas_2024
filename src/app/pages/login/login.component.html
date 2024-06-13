@@ -1,0 +1,52 @@
+<app-header-login></app-header-login>
+<div class="login">
+    <!--this div only displays if the user variable is true-->
+    <div class="box" *ngIf="user">
+
+        <h3>Login</h3>
+        <!-- student's Login Form-->
+        <form onsubmit="">
+           <label for="#cpf">CPF</label>
+           <input type="text" name="CPF" id="cpf" mask="000.000.000-00">
+
+           <label for="#senha">Senha</label>
+           <input type="password" name="Senha" id="senha">
+
+           <input type="submit">
+        </form>
+        <!--Links for 'forgot my password' page and 'sign-up' page -->
+       <div class="links">
+            <!--Forgot my password -->
+            <a routerLink="">Esqueci minha senha</a>
+            <!-- Not sign-up yet-->
+            <a routerLink="cadastro/Aluno">Não tenho cadastro</a>
+
+        </div>
+    </div>
+     <!--this div only displays if the user variable is false-->
+    <div class="box" *ngIf="!user">
+
+        <h3>Login</h3>
+        
+        <!-- Recruiters Login Form-->
+         <form onsubmit="">
+
+            <label for="#cnpj">CNPJ</label>
+           <input type="text" name="CNPJ" id="cnpj">
+
+           <label for="#senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+
+            <input type="submit">
+        </form>
+        <!--Links for 'forgot my password' page and 'sign-up' page-->
+        <div class="links">
+            <!--Forgot my password page -->
+            <a routerLink="">Esqueci minha senha</a>
+             <!-- sign-up page-->
+            <a routerLink="/signup">Não tenho cadastro</a>
+            
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<!--This components is the student's sign up form -->
+<img src="../../../assets/icons/briefcasewithoutbackground.svg" alt="briefcase">
+        <h3>Adicionar Vaga</h3>
+        <form action="">
+            <input type="hidden" value="id">
+            <label for="#titulo">Titulo</label>
+            <input type="text" id="titulo" placeholder="titulo da vaga">
+            <label for="#Contratação">Contratação</label>
+            <select name="Contratação" id="Contratação">
+                <option value="Estagio">Estagio</option>
+                <option value="CLT">CLT</option>
+                <option value="PJ">PJ</option>
+            </select>
+            <label for="#Modalidade">Modalidade</label>
+            <select name="Modalidade" id="Modalidade">
+                <option value="Estagio">Semi-presencial</option>
+                <option value="Emprego">Presencial</option>
+                <option value="Home Office">Home Office</option>
+            </select>
+            <label for="#endereço">Endereço</label>
+            <input type="text" id="endereço" placeholder="Rua,número,bairro,cidade">
+            <label for="#Descrição">Descrição </label>
+            <textarea name="Descrição" id="Descrição" rows="10"></textarea>
+            <div class="submit" >
+                <input type="submit" name="Cadastrar">
+                <!--the link below redirects to the home-page -->
+                <a routerLink="/Home">Cancelar</a>
+            </div>
+        </form>
+

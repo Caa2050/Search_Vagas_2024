@@ -1,0 +1,101 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 9px;
+
+}
+.menu > .logo{
+    margin-left: 5px;
+}
+.menu > .btn-login{
+   
+    padding: 10px;
+    background-color: rgb(174, 25, 20);
+    color:#fff;
+    transition: 0.4s;
+    margin-right: 5px;
+}
+.menu > .btn-login:hover{
+    background-color: #CD1616;
+}
+.menu > .logo{
+    font-size: 30px;
+}
+.menu > a{
+    color: black;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.intro > .text_and_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.intro > .text_and_btn > p{
+   font-size:100%;
+  
+}
+.intro > .text_and_btn > .text{
+    font-size: 25px;
+
+}
+.intro > img{
+    width: 20%;
+}
+.intro > .text_and_btn > .btn-sign_in{
+   background-color: rgb(174, 25, 20);
+   border: 1px solid rgb(174, 25, 20);
+   width: max-content;
+   padding: 9px;
+   color: #fff;
+   font-weight: bolder;
+   cursor: pointer;
+   transition: 0.4s;
+}
+.intro > .text_and_btn > .btn-sign_in:hover{
+    background-color: #CD1616;
+}
+h1{
+    text-align: center;
+}
+.cards{
+    display: flex;
+   margin-top: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.cards > .card{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 250px;
+    
+   
+}
+.cards > .card > p{
+    font-size: 100%;
+    font-weight: bold;
+}
+.cards > .card > img{
+    width: 100%;
+}

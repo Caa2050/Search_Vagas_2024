@@ -1,0 +1,38 @@
+<app-header-login></app-header-login>
+<!--The h1 and div tags are displayed if the text variable is equal to 'login'-->
+<h1 *ngIf="text == 'login'">Fazer login como:</h1>
+<div class="select-user" *ngIf="text == 'login'">
+   <!--the link below redirects to the login page, sending the Recrutador value through the route link-->
+   <a routerLink="/login/Recrutador">
+    <div class="user" >
+        <img src="../../../assets/icons/building.svg" alt="">
+        <h3>Recrutador</h3>
+         </div>
+   </a> 
+   <!--the link below redirects to the login page, sending the Aluno value through the route link-->
+   <a href="/login/Aluno">
+     <div class="user" routerLink="/login-user/Aluno">
+        <img src="../../../assets/icons/user.svg" alt="">
+        <h3>Alunos</h3>
+    </div>
+   </a>
+</div>
+<!--The h1 and div tags are displayed if the text variable is equal to 'cadastro'-->
+<h1 *ngIf="text =='cadastro'">Fazer cadastro como:</h1>
+<div class="select-user" *ngIf="text == 'cadastro'">
+  <!--the link below redirects to the sign-up page, sending the Recrutador value through the route link-->
+   <a routerLink="/cadastro/Recrutador">
+    <div class="user" >
+        <img src="../../../assets/icons/building.svg" alt="">
+        <h3>Recrutador</h3>
+         </div>
+   </a> 
+   <!--the link below redirects to the sign-up page, sending the Aluno value through the route link-->
+   <a routerLink="/cadastro/Aluno">
+     <div class="user" routerLink="/login-user/Aluno">
+        <img src="../../../assets/icons/user.svg" alt="">
+        <h3>Alunos</h3>
+    </div>
+   </a>
+</div>
+

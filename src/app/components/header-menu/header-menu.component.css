@@ -1,0 +1,30 @@
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:rgb(174, 25, 20) ;
+    
+}
+.logo{
+    font-weight: 900;
+    font-size: xx-large;
+}
+ul{
+    background-color: rgb(174, 25, 20);
+    list-style: none;
+    
+}
+ul > a{
+    margin-left: 15px;
+}
+a{
+    text-decoration: none;
+    background-color: rgb(174, 25, 20);
+    color: #fff;
+}
+.options{
+    display: flex;
+    width: 30%;
+    
+}

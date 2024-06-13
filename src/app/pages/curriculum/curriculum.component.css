@@ -1,0 +1,25 @@
+.upload{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.upload > h2{
+    align-self: start;
+    margin-left: 10px;
+}
+.upload > .no-curriculum{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.no-curriculum > img{
+    width: 30%;
+}
+.no-curriculum> h2{
+    color: #939395;
+}

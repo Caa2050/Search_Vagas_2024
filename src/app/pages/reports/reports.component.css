@@ -1,0 +1,25 @@
+.reports{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.reports > h2{
+    align-self: start;
+    margin-left: 10px;
+}
+.reports > .no-reports{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.no-reports > img{
+    width: 30%;
+}
+.no-reports> h2{
+    color: #939395;
+}

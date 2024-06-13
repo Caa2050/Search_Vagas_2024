@@ -1,0 +1,40 @@
+<!--The div below is the menu in the landing-page component that have two link:-->
+<!--The first one is the logo and the second is the login button-->
+<div class="menu">
+    <a routerLink="Landing" class="logo">Search Vagas</a>
+    <!--the a tag below redirects to the users page, sending the value login through the route link-->
+    <a routerLink="/login" class="btn-login">Log in</a>
+    
+</div>
+<!--This div has two things: a text with a link that redirects to the users page-->
+<!-- And a building icon-->
+<div class="intro">
+    <!--This div contains the text and a link-->
+    <div class="text_and_btn">
+        <div class="text">
+            <p>Procure por vagas de Emprego, estagio</p>
+            <p>e Empresas, envie curriculos e tenha </p>
+            <p>contato com os recrutadores pelo Serach 
+            Vagas.</p>
+        </div>
+        <!--The a tag redirects to the users page, sending the cadastro value through the route link-->
+        <a routerLink="/cadastro" class="btn-sign_in">Começar agora</a>
+    </div>
+    <!--The building icon-->
+    <img src="../../../assets/icons/buildings.svg" alt="buildings">
+</div>
+<!--This div displays an array of icons and texts that explains the main functions-->
+<div class="cards">
+    <div class="card">
+        <img src="../../../assets/icons/briefcase.svg" alt="briefcase">
+        <p>Pesquise por vagas de trabalho ou estagio</p>
+    </div>
+    <div class="card">
+        <img src="../../../assets/icons/paper-sheet.svg" alt="paper-sheet">
+        <p>Faça upload e envio de curriculos</p>
+    </div>
+    <div class="card">
+        <img src="../../../assets/icons/building.svg" alt="building">
+        <p>Entre e mantenha contato com os recrutadores</p>
+    </div>
+</div>

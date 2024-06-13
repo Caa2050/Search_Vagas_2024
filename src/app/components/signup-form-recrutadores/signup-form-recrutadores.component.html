@@ -1,0 +1,36 @@
+<!--This components is the recruiter's sign up form -->
+<img src="../../../assets/icons/userwithoutbackground.svg" alt="user">
+        <h3>Cadastro de usuario</h3>
+        <form (ngSubmit)="submit()" [formGroup]="recruiterForm" #formDir="ngForm">
+            <label for="#nome">Nome</label>
+            <input type="text" id="nome" placeholder="Nome Completo" formControlName="nome" required>
+
+            <label for="#CNPJ">CNPJ</label>
+            <input type="text" id="CNPJ" placeholder="00.000.000/0001-00" mask="00.000.000/0000-00" formControlName="cnpj">
+
+             <label for="#telefone">Telefone Fixo</label>
+            <input type="text" id="telefone" placeholder="(ddd) 0000-0000" mask="(00)0000-0000" formControlName="telefone" required>
+
+            <label for="#telefonecelular">Telefone Celular</label>
+            <input type="text" id="telefonecelular" placeholder="(ddd) 0 0000-0000" mask="(00)00000-0000" formControlName="telefonecelular" required>
+
+             <label for="#email">Email</label>
+            <input type="email" id="email" placeholder="Nome Completo" formControlName="email">
+
+            <label for="#endereço">Endereço</label>
+            <input type="text" id="endereço" formControlName="endereço">
+
+            <label for="#senha">Senha</label>
+            <input type="password" id="senha" formControlName="senha">
+
+            <label for="#confirmar_senha">Confirmar Senha</label>
+            <input type="password" id="#confirmar_senha" formControlName="confirmar_senha">
+          
+
+            <div class="submit">
+                <input type="submit" name="Cadastrar">
+                  <!--the link below redirects to the landing-page -->
+                <a routerLink="/Landing">Cancelar</a>
+            </div>
+        </form>
+
